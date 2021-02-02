@@ -1,4 +1,5 @@
 class BooksController < ApplicationController
+  before_action :set_book, only: [:edit, :update, :show, :destroy]
   
   def index
     @books = Book.order('created_at DESC')
@@ -17,12 +18,19 @@ class BooksController < ApplicationController
     end 
   end
 
+  def show
+  end
+
   private
 
   def book_params
     params.require(:book).permit(
       :title, :author, :genre_id, :summary, :impressions, :image
     ).merge(user_id: current_user.id)
+  end
+
+  def set_book
+    @book = Book.find(params[:id])
   end
 
 end
