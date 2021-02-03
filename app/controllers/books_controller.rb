@@ -21,6 +21,14 @@ class BooksController < ApplicationController
   def edit
   end
 
+  def update
+    if @book.update(book_params)
+      redirect_to book_path(@book.id)
+    else
+      render :edit
+    end
+  end
+
   def show
   end
 
