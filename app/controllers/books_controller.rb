@@ -32,6 +32,15 @@ class BooksController < ApplicationController
   def show
   end
 
+  def destroy
+    if user_signed_in? && current_user.id == @book.user.id
+      @book.destroy
+      redirect_to root_path
+    else
+      redirect_to book_path(@book.id)
+    end
+  end
+
   private
 
   def book_params
