@@ -6,8 +6,6 @@ a {
   background: #f8f8f8;
 }
 
-/* 商品一覧 */
-
 .item-contents {
   background-color: #FFF;
   display: flex;
@@ -40,7 +38,8 @@ a {
 .item-lists>.list {
   width: 37vh;
   padding: 1vw;
-  background-color: #FFF;
+  margin: 1vw;
+  border: 3px solid #575656
 }
 
 
@@ -49,7 +48,7 @@ a {
 }
 
 .item-img {
-  width: 33vh;
+  width: 25vh;
   height: 33vh;
 }
 
@@ -85,5 +84,3 @@ a {
 .star-count {
   font-size: 2vh;
 }
-
-/* //商品一覧 */
