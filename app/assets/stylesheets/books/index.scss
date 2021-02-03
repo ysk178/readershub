@@ -3,6 +3,7 @@ a {
 }
 
 .main {
+  margin-top: 20vh;
   background: #f8f8f8;
 }
 
@@ -39,7 +40,9 @@ a {
   width: 37vh;
   padding: 1vw;
   margin: 1vw;
-  border: 3px solid #575656
+  border: 3px solid #575656;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 
 
@@ -54,8 +57,8 @@ a {
 
 
 .item-info {
-  background-color: #FFF;
-  color: black;
+  background-color:#ffffff;
+  color:#000000;
   padding: 1vw;
 }
 

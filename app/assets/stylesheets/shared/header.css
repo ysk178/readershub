@@ -7,8 +7,11 @@
   padding: 2vh 15vw;
   display: flex;
   flex-direction: column;
-  border: 1px solid #000000;
-  background-color: #0d0d97;
+  border: 3px solid #000000;
+  background-color: #102b7c;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 .search-bar-contents {
@@ -19,6 +22,9 @@
 
 .search-bar-contents>p {
   color: #ffffff;
+  font-family: "arial black";
+  font-size: 20px;
+  box-shadow: 0 5px #020233;
 }
 
 .search-bar-contents>span {
@@ -26,7 +32,9 @@
 }
 
 .icon {
+  background-color: #102b7c;
   width: 4vw;
+  padding-top: 5px;
   padding-left: 5px;
   margin-right: 4vw;
 }
@@ -39,17 +47,19 @@
 }
 
 .search-form>.input-box {
-  width: 100%;
+  width: 50%;
   height: 5vh;
   padding-left: 10px;
+  box-shadow: 5px 5px #020233;
 }
 
 .search-button {
   width: 5vh;
   border: 0;
   cursor: pointer;
-  background-color: #0d0d97;
+  background-color: #102b7c;
   padding: 8px;
+  box-shadow: 5px 5px #020233;
 }
 
 .search-icon {
@@ -82,17 +92,26 @@
 
 .logout {
   text-decoration: none;
+  font-size: 20px;
   color: #ffffff;
+  padding: 7px;
+  box-shadow: 5px 5px #020233;
 }
 
 .login {
   text-decoration: none;
   line-height: 32px;
   margin-right: 3vw;
+  font-size: 20px;
   color: #ffffff;
+  padding: 7px;
+  box-shadow: 5px 5px #020233;
 }
 
 .sign-up {
   text-decoration: none;
+  font-size: 20px;
   color: #ffffff;
+  padding: 7px;
+  box-shadow: 5px 5px #020233;
 }
