@@ -16,6 +16,12 @@
   text-align: center;
 }
 
+.items-sell-header>a {
+  font-family: "arial black";
+  cursor: pointer;
+  color: #102b7c;
+}
+
 .items-sell-main {
   background-color: #FFF;
   width: 70vw;
@@ -98,6 +104,7 @@
 
 .items-text {
   width: 100%;
+  margin-bottom: 10px;
   padding: 16px 16px 8px;
   border-radius: 4px;
   border: 1px solid #ccc;
@@ -132,6 +139,7 @@
 /* 下部ボタン */
 .sell-btn-contents {
   width: 100%;
+  margin-top: 15px;
   text-align: center;
 }
 

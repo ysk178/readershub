@@ -31,21 +31,16 @@
     <%# //ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
 
     <div class="item-explain-box">
-      <span><%= "本の詳細" %></span>
+      <span><%= @book.summary %></span>
+    </div>
+    <div class="item-explain-box">
+      <span><%= @book.impressions %></span>
     </div>
     <table class="detail-table">
       <tbody>
         <tr>
           <th class="detail-item">投稿者</th>
           <td class="detail-value"><%= @book.user.nickname %></td>
-        </tr>
-        <tr>
-          <th class="detail-item">本の要約</th>
-          <td class="detail-value"><%= @book.summary %></td>
-        </tr>
-        <tr>
-          <th class="detail-item">本の感想</th>
-          <td class="detail-value"><%= @book.impressions %></td>
         </tr>
       </tbody>
     </table>
