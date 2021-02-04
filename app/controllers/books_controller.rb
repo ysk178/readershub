@@ -1,5 +1,6 @@
 class BooksController < ApplicationController
   before_action :set_book, only: [:edit, :update, :show, :destroy]
+  before_action :move_to_index, except: [:index, :show, :search]
   
   def index
     @books = Book.order('created_at DESC')
@@ -41,6 +42,10 @@ class BooksController < ApplicationController
     end
   end
 
+  def search
+    @books = Book.search(params[:keyword])
+  end
+
   private
 
   def book_params
@@ -51,6 +56,12 @@ class BooksController < ApplicationController
 
   def set_book
     @book = Book.find(params[:id])
+  end
+
+  def move_to_index
+    unless user_signed_in?
+      redirect_to action: :index
+    end
   end
 
 end
