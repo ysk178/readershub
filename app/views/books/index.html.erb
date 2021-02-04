@@ -1,25 +1,23 @@
 <%= render "shared/header" %>
 <div class='main'>
 
-  <%# 商品一覧 %>
-  <div class='item-contents'>
+  <div class='book-contents'>
     <h2 class='title'>新規投稿</h2>
     <%#= link_to '新規投稿', "#", class: "subtitle" %>
-    <ul class='item-lists'>
+    <ul class='book-lists'>
 
-      <%# 商品のインスタンス変数になにか入っている場合、中身のすべてを展開できるようにしましょう %>
       <% @books.each do |book| %>
       <li class='list'>
         <%= link_to book_path(book.id), method: :get do %>
-        <div class='item-img-content'>
-          <%= image_tag book.image, class: "item-img" if book.image.attached? %>
+        <div class='book-img-content'>
+          <%= image_tag book.image, class: "book-img" if book.image.attached? %>
         </div>
         
-        <div class='item-info'>
-          <h3 class='item-name'>
+        <div class='book-info'>
+          <h3 class='book-title'>
             <%= book.title %>
           </h3>
-          <div class='item-price'>
+          <div class='book-author'>
             <span><%= book.author %><br><%= book.genre.name %></span>
             <div class='star-btn'>
               <%= image_tag "star.png", class:"star-icon" %>
@@ -30,34 +28,9 @@
         <% end %>
       </li>
       <% end %>
-      <%# //商品のインスタンス変数になにか入っている場合、中身のすべてを展開できるようにしましょう %>
 
-      <%# 商品がない場合は以下のダミー商品が表示されるようにしましょう %>
-      <%# 商品がある場合は表示されないようにしましょう %>
-      <% if @books.empty? %>
-      <li class='list'>
-        <%= link_to '#' do %>
-        <%= image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg", class: "item-img" %>
-        <div class='item-info'>
-          <h3 class='item-name'>
-            タイトル
-          </h3>
-          <div class='item-price'>
-            <span>著者<br>ジャンル</span>
-            <div class='star-btn'>
-              <%= image_tag "star.png", class:"star-icon" %>
-              <span class='star-count'>0</span>
-            </div>
-          </div>
-        </div>
-        <% end %>
-      </li>
-      <% end %>
-      <%# //商品がある場合は表示されないようにしましょう %>
-      <%# //商品がない場合は以下のダミー商品が表示されるようにしましょう %>
     </ul>
   </div>
-  <%# /商品一覧 %>
 </div>
 <%= link_to('books/new', class: 'purchase-btn') do %>
   <span class='purchase-btn-text'>投稿する</span>

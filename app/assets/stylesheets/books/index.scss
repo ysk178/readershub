@@ -7,7 +7,7 @@ a {
   background: #f8f8f8;
 }
 
-.item-contents {
+.book-contents {
   background-color: #FFF;
   display: flex;
   flex-direction: column;
@@ -15,13 +15,13 @@ a {
   padding: 10vh 0;
 }
 
-.item-contents>.title {
+.book-contents>.title {
   font-size: 5vh;
   line-height: 1.4;
   font-weight: bold;
 }
 
-.item-contents>.subtitle {
+.book-contents>.subtitle {
   font-size: 3vh;
   margin: 1vh 0;
   text-decoration: none;
@@ -29,14 +29,14 @@ a {
   font-weight: bold;
 }
 
-.item-lists {
+.book-lists {
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.item-lists>.list {
+.book-lists>.list {
   width: 37vh;
   padding: 1vw;
   margin: 1vw;
@@ -46,27 +46,27 @@ a {
 }
 
 
-.item-img-content {
+.book-img-content {
   position: relative;
 }
 
-.item-img {
+.book-img {
   width: 25vh;
   height: 33vh;
 }
 
 
-.item-info {
+.book-info {
   background-color:#ffffff;
   color:#000000;
   padding: 1vw;
 }
 
-.item-name {
+.book-title {
   font-size: 2.5vh;
 }
 
-.item-price {
+.book-author {
   font-size: 1.5vh;
   display: flex;
   justify-content: space-between;
