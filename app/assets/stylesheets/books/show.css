@@ -1,6 +1,4 @@
-/* 商品の概要 */
-
-.item-show {
+.book-show {
   background-color: #f8f8f8;
   width: 100vw;
   display: flex;
@@ -10,7 +8,7 @@
   margin-top: 15vh;
 }
 
-.item-box {
+.book-box {
   background-color: #FFF;
   width: 70vw;
   min-width: 1200px;
@@ -20,36 +18,36 @@
   align-items: center;
 }
 
-.item-box>.name {
+.book-box>.name {
   text-align: center;
   font-weight: bold;
   font-size: 25px;
 }
 
-.item-box-img {
+.book-box-img {
   height: 42vh;
   width: 18vw;
   object-fit: contain;
 }
 
-.item-price-box {
+.book-author-box {
   margin: 25px 0px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.item-price-box>.item-price {
+.book-author-box>.book-author {
   font-size: 4vh;
   font-weight: bold;
 }
 
-.item-price-box>.item-postage {
+.book-author-box>.book-genre {
   font-size: 16px;
 }
 
 
-.item-red-btn {
+.book-red-btn {
   text-align: center;
   background-color: #ea352d;
   font-size: 24px;
@@ -63,7 +61,7 @@
   font-size: 20px;
 }
 
-.item-destroy {
+.book-destroy {
   background-color: lightgray;
   text-align: center;
   font-size: 24px;
@@ -72,9 +70,17 @@
   padding: 2vh 10vw;
 }
 
-.item-explain-box {
+.book-explain-box {
   font-size: 18px;
   margin: 50px 0px;
+}
+
+.book-detail {
+  color: #ffffff;
+  background-color: #102b7c;
+  width: 45px;
+  padding: 3px;
+  text-align: center;
 }
 
 .detail-table {
@@ -82,7 +88,7 @@
   width: 100%;
 }
 
-.detail-item {
+.detail-book {
   width: 20%;
   background-color: #eee;
   border: 1px solid #dedede;
@@ -137,7 +143,6 @@
 }
 
 
-/* /商品の概要 */
 
 .comment-box {
   width: 40vw;
@@ -189,17 +194,8 @@
 
 }
 
-.change-item-btn {
+.change-book-btn {
   font-size: 30px;
   text-decoration: none;
   color:#102b7c;
-}
-
-.another-item {
-  display: block;
-  margin: 30px 0px 8px;
-  color: #102b7c;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 23px;
 }

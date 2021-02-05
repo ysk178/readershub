@@ -1,40 +1,42 @@
 <%= render "shared/header" %>
 
-<div class="item-show">
-  <div class="item-box">
+<div class="book-show">
+  <div class="book-box">
     <h2 class="name">
       <%= @book.title %>
     </h2>
-    <div class="item-img-content">
-      <%= image_tag @book.image, class:"item-box-img" %>
+    <div class="book-img-content">
+      <%= image_tag @book.image, class:"book-box-img" %>
     </div>
-    <div class="item-price-box">
-      <span class="item-price">
+    <div class="book-author-box">
+      <span class="book-autohr">
          <%= @book.author %>
       </span>
-      <span class="item-postage">
+      <span class="book-genre">
         <%= @book.genre.name %>
       </span>
     </div>
 
     <% if user_signed_in? %>
       <% if current_user.id == @book.user_id %>
-        <%= link_to "本の編集", edit_book_path(@book.id), method: :get, class: "item-red-btn" %>
+        <%= link_to "本の編集", edit_book_path(@book.id), method: :get, class: "book-red-btn" %>
         <p class="or-text">or</p>
-        <%= link_to "削除", book_path(@book.id), method: :delete, class:"item-destroy" %>
+        <%= link_to "削除", book_path(@book.id), method: :delete, class:"book-destroy" %>
       <% end %>
     <% end %>
 
-    <div class="item-explain-box">
+    <div class="book-explain-box">
+      <div class="book-detail">要約</div>
       <span><%= @book.summary %></span>
     </div>
-    <div class="item-explain-box">
+    <div class="book-explain-box">
+      <div class="book-detail">感想</div>
       <span><%= @book.impressions %></span>
     </div>
     <table class="detail-table">
       <tbody>
         <tr>
-          <th class="detail-item">投稿者</th>
+          <th class="detail-book">投稿者</th>
           <td class="detail-value"><%= @book.user.nickname %></td>
         </tr>
       </tbody>
@@ -60,10 +62,10 @@
     </form>
   </div>
   <div class="links">
-    <a href="#" class="change-item-btn">
+    <a href="#" class="change-book-btn">
       ＜ 前の本
     </a>
-    <a href="#" class="change-item-btn">
+    <a href="#" class="change-book-btn">
       後ろの本 ＞
     </a>
   </div>
