@@ -2,7 +2,7 @@
 <div class='main'>
 
   <div class='book-contents'>
-    <h2 class='title'>新規投稿</h2>
+    <h2 class='title'><%= @nickname %>さんの投稿一覧</h2>
     <%#= link_to '新規投稿', "#", class: "subtitle" %>
     <ul class='book-lists'>
 
@@ -15,8 +15,8 @@
         
         <div class='book-info'>
           <div class='book-author'>
-            <span><%= book.author %><br><%= book.genre.name %><br><%= link_to book.user.nickname, user_path(book.user.id) %></span>
-
+            <span><%= book.author %><br><%= book.genre.name %></span>
+            
             <div class='star-btn'>
               <%= image_tag "star.png", class:"star-icon" %>
               <span class='star-count'>0</span>

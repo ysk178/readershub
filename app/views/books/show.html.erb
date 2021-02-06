@@ -37,7 +37,7 @@
       <tbody>
         <tr>
           <th class="detail-book">投稿者</th>
-          <td class="detail-value"><%= @book.user.nickname %></td>
+          <td class="detail-value"><%= link_to @book.user.nickname, user_path(@book.user.id) %></td>
         </tr>
       </tbody>
     </table>
