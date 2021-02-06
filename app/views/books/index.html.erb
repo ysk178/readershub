@@ -15,8 +15,8 @@
         
         <div class='book-info'>
           <div class='book-author'>
-            <span><%= book.author %><br><%= book.genre.name %></span>
-            
+            <span><%= book.author %><br><%= book.genre.name %><br><%= link_to book.user.nickname, user_path(book.user.id) %></span>
+
             <div class='star-btn'>
               <%= image_tag "star.png", class:"star-icon" %>
               <span class='star-count'>0</span>

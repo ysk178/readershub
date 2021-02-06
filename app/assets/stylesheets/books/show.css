@@ -102,6 +102,8 @@
   padding: 20px;
   border: 1px solid #dedede;
   font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .option {
