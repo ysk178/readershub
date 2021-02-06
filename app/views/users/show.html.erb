@@ -1,0 +1,37 @@
+<%= render "shared/header" %>
+<div class='main'>
+
+  <div class='book-contents'>
+    <h2 class='title'><%= @nickname %>さんの投稿一覧</h2>
+    <%#= link_to '新規投稿', "#", class: "subtitle" %>
+    <ul class='book-lists'>
+
+      <% @books.each do |book| %>
+      <li class='list'>
+        <%= link_to book_path(book.id), method: :get do %>
+        <div class='book-img-content'>
+          <%= image_tag book.image, class: "book-img" if book.image.attached? %>
+        </div>
+        
+        <div class='book-info'>
+          <div class='book-author'>
+            <span><%= book.author %><br><%= book.genre.name %></span>
+            
+            <div class='star-btn'>
+              <%= image_tag "star.png", class:"star-icon" %>
+              <span class='star-count'>0</span>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </li>
+      <% end %>
+
+    </ul>
+  </div>
+</div>
+<%= link_to('books/new', class: 'purchase-btn') do %>
+  <span class='purchase-btn-text'>投稿する</span>
+  <%= image_tag 'icon_camera.png' , size: '185x50' ,class: "purchase-btn-icon" %>
+<% end %>
+<%= render "shared/footer" %>
