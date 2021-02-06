@@ -63,13 +63,30 @@ a {
 }
 
 .book-title {
-  font-size: 2.5vh;
+  font-size: 3vh;
+  color: #000000;
+  text-decoration: none;
 }
 
-.book-author .book-genre .book-contributor {
+.book-author {
   font-size: 1.5vh;
   display: flex;
   justify-content: space-between;
+  color: #000000;
+  text-decoration: none;
+}
+
+.book-genre {
+  font-size: 1.5vh;
+  display: flex;
+  justify-content: space-between;
+  color: #000000;
+  text-decoration: none;
+}
+
+.book-contributor {
+  font-size: 1.5vh;
+  display: flex;
   color: #000000;
   text-decoration: none;
 }
