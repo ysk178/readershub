@@ -50,5 +50,4 @@ RSpec.describe Book, type: :model do
     @book.valid?
     expect(@book.errors.full_messages).to include("Impressions can't be blank")
   end
-
 end

@@ -1,7 +1,7 @@
 class BooksController < ApplicationController
   before_action :set_book, only: [:edit, :update, :show, :destroy]
   before_action :move_to_index, except: [:index, :show, :search]
-  
+
   def index
     @books = Book.includes(:user).order('created_at DESC')
   end
@@ -16,7 +16,7 @@ class BooksController < ApplicationController
       redirect_to root_path
     else
       render :new
-    end 
+    end
   end
 
   def edit
@@ -59,9 +59,6 @@ class BooksController < ApplicationController
   end
 
   def move_to_index
-    unless user_signed_in?
-      redirect_to action: :index
-    end
+    redirect_to action: :index unless user_signed_in?
   end
-
 end
