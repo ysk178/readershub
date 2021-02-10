@@ -29,7 +29,7 @@
         タイトル
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :title, class:"books-text", id:"item-name", placeholder:"タイトル（40文字まで)", maxlength:"40" %>
+      <%= f.text_area :title, class:"books-text", id:"item-name", placeholder:"タイトル", maxlength:"40" %>
 
       <div class="weight-bold-text">
         著者
@@ -53,7 +53,7 @@
           要約
           <span class="indispensable">必須</span>
         </div>
-        <%= f.text_area :summary, class:"books-text", id:"item-info", placeholder:"本の要約（1,000文字まで）" ,rows:"7" ,maxlength:"1000" %>
+        <%= f.text_area :summary, class:"books-text", id:"item-info", placeholder:"本の要約" ,rows:"7" ,maxlength:"1000" %>
       </div>
 
       <div class="books-explain">
@@ -61,7 +61,7 @@
           感想
           <span class="indispensable">必須</span>
         </div>
-        <%= f.text_area :impressions, class:"books-text", id:"item-info", placeholder:"本の感想（1,000文字まで）" ,rows:"7" ,maxlength:"1000" %>
+        <%= f.text_area :impressions, class:"books-text", id:"item-info", placeholder:"本の感想" ,rows:"7" ,maxlength:"1000" %>
       </div>
 
     <div class="post-btn-contents">
