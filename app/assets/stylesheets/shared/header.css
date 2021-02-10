@@ -115,3 +115,24 @@
   padding: 7px;
   box-shadow: 5px 5px #020233;
 }
+
+.logout:active {
+  position: relative;
+  top: 5px;
+  left: 5px;
+  box-shadow: none;
+}
+
+.login:active {
+  position: relative;
+  top: 5px;
+  left: 5px;
+  box-shadow: none;
+}
+
+.sign-up:active {
+  position: relative;
+  top: 5px;
+  left: 5px;
+  box-shadow: none;
+}
