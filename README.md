@@ -34,7 +34,8 @@
 (https://readershub0.herokuapp.com/)
 
 ## デモ画像
-!(app/assets/images/demo.png)
+![demo]
+(https://user-images.githubusercontent.com/72486282/108059014-374c0180-7098-11eb-83f3-30c3242c3023.png)
 
 ## テスト用アカウント
 ・ニックネーム： test  
