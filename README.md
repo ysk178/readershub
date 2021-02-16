@@ -34,7 +34,7 @@
 (https://readershub0.herokuapp.com/)
 
 ## デモ画像
-![](images/demo.png)
+!(app/assets/images/demo.png)
 
 ## テスト用アカウント
 ・ニックネーム： test  
