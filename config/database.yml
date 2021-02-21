@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: readershub_production
-  username: readershub
-  password: <%= ENV['READERSHUB_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
