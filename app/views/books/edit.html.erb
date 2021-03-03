@@ -37,7 +37,7 @@
     <div class="books-detail">
       <div class="form">
         <div class="weight-bold-text">
-          本のジャンル
+          ジャンル
           <span class="indispensable">必須</span>
         </div>
         <%= f.collection_select(:genre_id, Genre.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
